@@ -2,7 +2,7 @@
 
 echo "VERCEL_ENV: $VERCEL_ENV"
 
-if [[ "$VERCEL_ENV" == "production" && ! `git diff HEAD^ HEAD --quiet CHANGELOG.md` ]] ; then
+if [[ "$VERCEL_ENV" == "production" && `! git diff HEAD^ HEAD --quiet CHANGELOG.md` ]] ; then
   # Don't build
   echo "🛑 - Build cancelled"
   exit 0;

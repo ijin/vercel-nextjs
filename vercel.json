@@ -1,7 +1,3 @@
 {
-  "git": {
-    "deploymentEnabled": {
-      "production": false
-    }
-  }
+  "ignoreCommand": "bash should_i_deploy_production.sh"
 }
